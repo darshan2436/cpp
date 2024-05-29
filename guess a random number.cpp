@@ -16,12 +16,10 @@ int main()
    	tries--;
 	if(guess==random){
    cout<<"Congratulation you guessed it correct\n"<<endl;
-   	cout<<"**************************************";	
 	}
    	if(tries==0&&guess!=random){
    		cout<<"Sorry you lost\nThe number was "<<random<<"\n"<<endl;
-   		cout<<"**************************************";
-   		exit(0);
+		break;
 	   }
 	if(guess>random){
 		cout<<"Going too high Buddy\n";
@@ -30,6 +28,6 @@ int main()
 		cout<<"Not That less\n";
 	}
    }while(guess!=random);
+  	cout<<"**************************************";	
    return 0;
 }
-
